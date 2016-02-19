@@ -1,0 +1,100 @@
+#about p, #artist-village p {
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  text-indent: 20px;
+}
+
+#about h1, #introduce h1, #introduce .box .box-body h3, #artist-village h1 {
+  text-align: center;
+}
+
+#main-nav {
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+#main-nav .navbar-nav > li > a {
+  font-size: 16px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/*#main-slider {
+  overflow: hidden;
+  position: relative;
+  top: 80px;
+}
+#main-slider .banner {
+  background-image: url(../images/banner1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}*/
+
+@media(max-width: 768px) {
+  #main-nav .menu {
+    height: 80px;
+  }
+  #main-nav .menu button {
+    margin-top: 10px;
+  }
+}
+#about {
+  padding: 100px 0 70px;
+}
+#about h1 {
+  margin-bottom: 30px;
+}
+
+@media(max-width: 768px) {
+  #about img {
+    padding-bottom: 15px;
+  }
+}
+#introduce {
+  padding: 100px 0 70px;
+}
+#introduce h1 {
+  margin-bottom: 30px;
+}
+#introduce .stretch {
+  display: inline-flex;
+}
+#introduce .box {
+  border: 2px solid #DCB5FF;
+  margin-bottom: 20px;
+}
+#introduce .box .box-heading img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 120px;
+  width: 100%;
+}
+#introduce .box .box-body {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 0px 15px;
+}
+#introduce .box .box-body p {
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  line-height: 1.7em;
+  text-indent: 15px;
+}
+
+#artist-village {
+  padding: 100px 0 70px;
+}
+#artist-village p {
+  margin-top: 30px;
+}
+#artist-village .artist img {
+  height: 260px;
+  width: 305px;
+}
+#artist-village .artist h3 {
+  text-align: center;
+  margin-top: 30px;
+}

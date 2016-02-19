@@ -1,0 +1,57 @@
+#about
+	padding: 100px 0 70px
+	h1
+		@extend %center
+		margin-bottom: 30px
+	p 
+		@extend %text-style
+
+@media(max-width: 768px)
+	#about  img
+		padding-bottom: 15px
+			
+#introduce
+	padding: 100px 0 70px
+	h1
+		@extend %center
+		margin-bottom: 30px
+	.stretch
+		display: inline-flex
+		// align-items: stretch
+	.box 
+		border: 2px solid #DCB5FF
+		margin-bottom: 20px
+		.box-heading
+			img	
+				border-top-left-radius: 8px
+				border-top-right-radius: 8px
+				height: 120px
+				width: 100%
+		.box-body
+			// border: 2px solid #DCB5FF
+			border-bottom-left-radius: 8px
+			border-bottom-right-radius: 8px
+			padding: 0px 15px
+			h3
+				@extend %center
+			p 
+				font-size: 15px
+				letter-spacing: 0.1em
+				line-height: 1.7em
+				text-indent: 15px
+
+#artist-village
+	padding: 100px 0 70px
+	h1
+		@extend %center
+	p 
+		@extend %text-style
+		margin-top: 30px
+	.artist
+		img
+			height: 260px
+			width: 305px 
+		h3
+			text-align: center
+			margin-top: 30px
+
