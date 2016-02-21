@@ -6,63 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>p2</title>
+    <!-- css -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-   
-
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.transitions.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <nav id="main-nav" class="navbar navbar-default   ">  <!-- navbar-fixed-top -->
+        <nav id="main-nav" class="navbar navbar-default">
             <div class="container">
-                <div class="navbar-header  menu">
-                    <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >
+                <div class="navbar-header Menu">
+                    <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>   
+                        <span class="icon-bar"></span>
                     </button>
-                    <a href="#" class="navbar-brand"><img src="images/logo.jpg" alt="logo"></a>
+                    <a href="#" class="navbar-brand"><img src="images/logo.jpg" alt="logo" /></a>
                 </div>
-                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><a href="#" class="scroll-link">首頁</a></li>
                         <li><a href="#about" class="scroll-link">關於總爺</a></li>
                         <li><a href="#introduce" class="scroll-link">園區介紹</a></li>
                         <li><a href="#artist-village" class="scroll-link">總爺國際藝術村</a></li>
-                        <li><a href="#portfolio" class="scroll-link">最新消息</a></li>
-                        <li><a href="#contactUs" class="scroll-link">聯絡資訊</a></li>
+                        <li><a href="#visit-information" class="scroll-link">參觀資訊</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
-
     <section>
-        <div class="flexslider">
-          <ul class="slides">
-            <li>
-              <img src="images/banner1.jpg" />
-            </li>
-            <li>
-              <img src="images/banner2.jpg" />
-            </li>
-          </ul>
+        <div id="main-slider" class="owl-carousel owl-theme">
+            <div id="" class="item Banner level-1">
+            </div>
+            <div id="" class="item Banner level-2">
+            </div>
         </div>
-
-    
     </section>
-   
-
-    <section   id="about"  class="container">
+    <section id="about" class="container">
         <div class="row">
             <h1>關於總爺</h1>
-            <div class="about-text">
+            <div class="About-text">
                 <img src="images/about.jpg" alt="about" class="col-sm-6  img-responsive" />
                 <div class="col-sm-6 ">
                     <p>總爺藝文中心係由麻豆總爺糖廠轉變而來，有總爺紅樓辦公室、廠長宿舍、招待所、紅磚工藝館、日式庭園，這裡綠蔭處處，老樹、綠色隧道、日式建築更是婚紗攝影常拍攝的外景地。</p>
@@ -71,69 +59,79 @@
                 </div>
             </div>
     </section>
-    <section  id="introduce" class="container">
+    <section id="introduce" class="container">
         <h1>園區介紹</h1>
-        <div class="row stretch">
-            
-            <div class="col-sm-4 box ">            
-                    <div class="box-heading">
-                        <img src="images/box1.jpg" >
-                    </div>
-                    <div class="box-body">
-                        <h3>紅樓</h3>
-                        <p>這棟以紅磚建造的長方形洋樓風格建築歷經多次增建，呈現簡樸、穩重、有序的空間格局；木造的室內樓板、八角裝飾扶手梯、屋樑椼架與小露臺欄架，非常古樸雅致；樓層窗戶開口的上緣中央以拱心石裝飾，強化了整個立面線條分明的層次變化。</p>
-                    </div>         
+        <div class="row Stretch">
+            <div class="col-sm-4 Box">
+                <div class="Box-heading">
+                    <img src="images/box1.jpg">
+                </div>
+                <div class="Box-body">
+                    <h3>紅樓</h3>
+                    <p>這棟以紅磚建造的長方形洋樓風格建築歷經多次增建，呈現簡樸、穩重、有序的空間格局；木造的室內樓板、八角裝飾扶手梯、屋樑椼架與小露臺欄架，非常古樸雅致；樓層窗戶開口的上緣中央以拱心石裝飾，強化了整個立面線條分明的層次變化。</p>
+                </div>
             </div>
-            <div class="col-sm-4 box "> 
-                    <div class="box-heading">
-                        <img src="images/box2.jpg" >
-                    </div>
-                    <div class="box-body">
-                        <h3>紅磚工藝館</h3>
-                        <p> 與招待所側方廊道相通的是昔日員工用膳之處「紅磚餐廳」，正門為白色、優美的仿巴洛克式門飾，在紅磚的襯托下更顯得清新、明快。</p>
-                    </div>  
+            <div class="col-sm-4 Box">
+                <div class="Box-heading">
+                    <img src="images/box2.jpg">
+                </div>
+                <div class="Box-body">
+                    <h3>紅磚工藝館</h3>
+                    <p> 與招待所側方廊道相通的是昔日員工用膳之處「紅磚餐廳」，正門為白色、優美的仿巴洛克式門飾，在紅磚的襯托下更顯得清新、明快。</p>
+                </div>
             </div>
-            <div class="col-sm-4 box ">
-                    <div class="box-heading">
-                        <img src="images/box3.jpg" >
-                    </div>
-                    <div class="box-body">
-                        <h3>廠長宿舍</h3>
-                        <p>「廠長宿舍」為離地架高的單層日式木造建築，屋內採和室設計，利用移動拉窗和隔扇來變化空間與調節光線。細緻典雅的工法、壁畫與雕花工藝、富禪意的空間營造，伴隨屋內散發出的淡淡木質香味，給人一種寧靜溫馨的和諧感。</p>
-                    </div>
+            <div class="col-sm-4 Box">
+                <div class="Box-heading">
+                    <img src="images/box3.jpg">
+                </div>
+                <div class="Box-body">
+                    <h3>廠長宿舍</h3>
+                    <p>「廠長宿舍」為離地架高的單層日式木造建築，屋內採和室設計，利用移動拉窗和隔扇來變化空間與調節光線。細緻典雅的工法、壁畫與雕花工藝、富禪意的空間營造，伴隨屋內散發出的淡淡木質香味，給人一種寧靜溫馨的和諧感。</p>
+                </div>
             </div>
         </div>
     </section>
-    <section  id= "artist-village" class="container ">
+    <section id="artist-village" class="container ">
         <h1>總爺國際藝術村</h1>
         <p>藝術村除了提供藝術家住宿、工作室、基本創作設備與展演空間，包括藝術工坊、玻璃工房、創藝工坊、總爺藝程與兒童藝術學苑（原總爺國小）、舊圖書館、自由廳、大樹草坪區、中庭廣場區等，也鼓勵藝術家與園區外周遭的人文環境做緊密的交流，深入認識民間信仰、傳統技藝、在地歷史與產業發展，並與社區民眾互動、與鄰近藝術學校進行交換計畫。</p>
-        <h3>駐站藝術家</h3>
-        <div class="row artist">
-            <div class="col-md-3 col-sm-6">
+        <h2>駐站藝術家</h2>
+        <div id="owl-demo" class="artist">
+            <div class="item row">
                 <img src="images/artist1.jpg" alt="artist1" class="img-responsive" />
                 <h3>Linda Toigo</h3>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="item ">
                 <img src="images/artist2.jpg" alt="artist2" class="img-responsive" />
                 <h3>朴昭玧（Soyoon Park）</h3>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="item ">
                 <img src="images/artist3.jpg" alt="artist3" class="img-responsive" />
                 <h3>陳漢聲</h3>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="item ">
                 <img src="images/artist4.jpg" alt="artist4" class="img-responsive" />
                 <h3>林建志</h3>
             </div>
+            <div class="item ">
+                <img src="images/artist5.jpg" alt="artist5" class="img-responsive" />
+                <h3>陳伯義</h3>
+            </div>
+            <div class="item ">
+                <img src="images/artist6.jpg" alt="artist6" class="img-responsive" />
+                <h3>王瑞亨</h3>
+            </div>
         </div>
     </section>
-    <!-- <script src="//code.jquery.com/jquery-1.12.0.min.js"></script> -->
+    <section id="visit-information">
+    </section>
+    <footer>
+        <div class="text-center">
+            <p> Copyright &copy;2016 | All Rights Reserved </p>
+        </div>
+    </footer>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-
-    <!-- <script src="js/custom-scripts.js"></script> -->
-    <script src="js/index.js"></script>
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
-
 </html>
