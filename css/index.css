@@ -101,22 +101,27 @@
 }
 
 #artist-village {
-  padding: 100px 0 70px;
+  padding: 100px 0px 0px 0px;
 }
 #artist-village p {
-  margin: 30px 0px;
+  padding: 30px 15px 20px 20px;
 }
-#artist-village #owl-demo .item {
-  margin: 15px;
+#artist-village h2 {
+  margin-left: 50px;
 }
-#artist-village #owl-demo .item h3 {
+#artist-village .Artist {
+  padding: 10px 30px 30px 30px;
+}
+#artist-village .Artist .item {
+  margin: 0 15px 15px 15px;
+}
+#artist-village .Artist h3 {
   text-align: center;
-  margin-top: 30px;
 }
-#artist-village #owl-demo .item img {
+#artist-village .Artist img {
   display: block;
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 
 footer {
