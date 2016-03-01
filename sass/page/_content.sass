@@ -1,4 +1,4 @@
-#about,#introduce,#artist-village
+#about,#introduce,#artist-village,#contact
 	padding-top: 100px
 #about
 	h1
@@ -55,8 +55,61 @@
 			width: 100%
 
 .owl-theme .owl-controls .owl-buttons div
-	background-color: #fff 
-	color: red
-	padding: 3px 2px
-	zoom: 3
+	background-color: #4da5f5
+	border-radius: 0
+	webkit-border-radius: 0
+	color: #FFF
+	font-size: 26px
+	margin: 10px
+	padding: 12px 16px
+	&:hover
+		background-color: #000
 	
+	
+#contact
+	#contact-text 
+		padding: 30px 20px 20px 20px 
+	h1
+		@extend %center
+	p 
+		@extend %text-style
+	.Information
+		margin-top: 30px
+
+	label
+		width: 80px
+		text-align: right
+		padding-right: 7px
+	input,textarea
+		border: 1px solid #bdbdbd
+		border-radius: 3px
+		color: #818181
+		font-size: 16px
+		line-height: 20px
+		max-width: 97%
+		padding: 5px
+		width: 400px
+	textarea
+		height: 130px
+	.Form-control
+		margin-bottom: 10px
+	.Comment label
+		vertical-align: top
+	#Button-control
+		.Btn-form
+			border: none
+			border-radius: 5px
+			color: #fff
+			font-size: 120%
+			line-height: 100%
+			letter-spacing: 0.1em
+			padding: 15px 20px
+			transition: 0.2s
+			&:hover
+				transform: scale(1.1)	
+		[type="submit"]
+			background: #5cb85c
+			margin-right: 10px
+		[type="reset"]
+			background: #000
+			

@@ -19,9 +19,9 @@
 <body>
     <header>
         <nav id="main-nav" class=" navbar-default">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="navbar-header Menu">
-                    <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#menu-nav">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -29,19 +29,19 @@
                     </button>
                     <a href="#" class="navbar-brand"><img src="images/logo.jpg" alt="logo"/></a>
                 </div>
-                <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse navbar-right">
+                <div id="menu-nav" class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li><a href="#" class="scroll-link">首頁</a></li>
+                        <li><a href="#home" class="scroll-link">首頁</a></li>
                         <li><a href="#about" class="scroll-link">關於總爺</a></li>
                         <li><a href="#introduce" class="scroll-link">園區介紹</a></li>
                         <li><a href="#artist-village" class="scroll-link">總爺國際藝術村</a></li>
-                        <li><a href="#visit-information" class="scroll-link">參觀資訊</a></li>
+                        <li><a href="#contact" class="scroll-link">聯絡我們</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <section>
+    <section id="home">
         <div id="main-slider" class="owl-carousel owl-theme">
             <div class="item Banner Level-1">
             </div>
@@ -125,7 +125,40 @@
             </div>
             <div>
     </section>
-    <section id="visit-information">
+    <section id="contact" class="container">
+        <div class="row">
+            <h1>聯絡我們</h1>
+            <p id="contact-text">若您對我們的服務或有其他相關問題需要我們為您解答，歡迎透用上班時間與我們聯繫，或透過以下表格留下您保貴的意見，再次感謝您的蒞臨賜教，謝謝！</p>
+            <div class="col-sm-6 Information">
+                <p>721 台南市麻豆區南勢里總爺5號</p>
+                <p>週三至週日，9:00 AM ~ 5:00 PM</p>
+                <p>(06)5718123</p>
+            </div>      
+            <div class="col-sm-6">      
+                    <form action="#" method="post">
+                        <div class="Form-control">
+                            <label for="name">您的姓名</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="Form-control">
+                            <label for="phone">聯絡電話</label>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+                        <div class="Form-control">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="Form-control Comment">
+                            <label for="message" >備註說明</label>
+                            <textarea  name="message" id="message" placeholder="請填寫您的問題，謝謝。"></textarea>
+                        </div>
+                        <div id="Button-control">                
+                            <button type="submit" class="Btn-form">確認送出</button>
+                            <button type="reset" class="Btn-form">清除重填</button>
+                        </div>
+                    </form>     
+            </div>
+        </div>
     </section>
     <footer>
         <div class="text-center">

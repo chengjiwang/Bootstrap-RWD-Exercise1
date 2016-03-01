@@ -1,11 +1,11 @@
-#about p, #artist-village p {
+#about p, #artist-village p, #contact p {
   font-size: 18px;
   letter-spacing: 0.1em;
   line-height: 1.5em;
   text-indent: 20px;
 }
 
-#about h1, #introduce h1, #introduce .Box .Box-body h3, #artist-village h1 {
+#about h1, #introduce h1, #introduce .Box .Box-body h3, #artist-village h1, #contact h1 {
   text-align: center;
 }
 
@@ -53,7 +53,7 @@
   right: 0;
 }
 
-#about, #introduce, #artist-village {
+#about, #introduce, #artist-village, #contact {
   padding-top: 100px;
 }
 
@@ -115,15 +115,74 @@
 }
 
 .owl-theme .owl-controls .owl-buttons div {
-  background-color: #fff;
-  color: red;
-  padding: 3px 2px;
-  zoom: 3;
+  background-color: #4da5f5;
+  border-radius: 0;
+  webkit-border-radius: 0;
+  color: #FFF;
+  font-size: 26px;
+  margin: 10px;
+  padding: 12px 16px;
+}
+.owl-theme .owl-controls .owl-buttons div:hover {
+  background-color: #000;
+}
+
+#contact #contact-text {
+  padding: 30px 20px 20px 20px;
+}
+#contact .Information {
+  margin-top: 30px;
+}
+#contact label {
+  width: 80px;
+  text-align: right;
+  padding-right: 7px;
+}
+#contact input, #contact textarea {
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+  color: #818181;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 97%;
+  padding: 5px;
+  width: 400px;
+}
+#contact textarea {
+  height: 130px;
+}
+#contact .Form-control {
+  margin-bottom: 10px;
+}
+#contact .Comment label {
+  vertical-align: top;
+}
+#contact #Button-control .Btn-form {
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 120%;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+  padding: 15px 20px;
+  transition: 0.2s;
+}
+#contact #Button-control .Btn-form:hover {
+  transform: scale(1.1);
+}
+#contact #Button-control [type="submit"] {
+  background: #5cb85c;
+  margin-right: 10px;
+}
+#contact #Button-control [type="reset"] {
+  background: #000;
 }
 
 footer {
   background-color: #262626;
   color: #fff;
+  letter-spacing: 0.1em;
+  margin-top: 30px;
   padding: 20px;
 }
 
@@ -146,12 +205,24 @@ footer {
     margin: 15px;
   }
 
-  #about, #introduce, #artist-village {
+  #about, #introduce, #artist-village, #contact {
     padding: 40px 0 0 0;
+  }
+
+  #contact {
+    margin: 10px;
+  }
+  #contact form label {
+    text-align: left;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   #about img {
     margin-top: 80px;
+  }
+}
+@media (min-width: 770px) {
+  #contact #Button-control {
+    margin-left: 87px;
   }
 }
