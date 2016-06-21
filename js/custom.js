@@ -11,7 +11,7 @@ $(document).ready(function() {
     });
 
     $("#main-slider").owlCarousel({
-        // autoPlay: 5000,
+        autoPlay: 5000,
         navigation: true, // Show next and prev buttons
         navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
         slideSpeed: 500,
