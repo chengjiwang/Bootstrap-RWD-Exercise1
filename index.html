@@ -4,53 +4,62 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap-RWD-Exercise1</title>
-    <!-- css -->
+    <title>總爺藝文中心</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="js/owl-carousel/owl.theme.css" rel="stylesheet">
     <link href="js/owl-carousel/owl.transitions.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
     <header>
         <nav id="main-nav" class=" navbar-default">
             <div class="container">
-                <div class="navbar-header Menu">
-                    <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#menu-nav">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="#" class="navbar-brand"><img src="images/logo.jpg" alt="logo"/></a>
-                </div>
-                <div id="menu-nav" class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#home" class="scroll-link">首頁</a></li>
-                        <li><a href="#about" class="scroll-link">關於總爺</a></li>
-                        <li><a href="#introduce" class="scroll-link">園區介紹</a></li>
-                        <li><a href="#artist-village" class="scroll-link">總爺國際藝術村</a></li>
-                        <li><a href="#contact" class="scroll-link">聯絡我們</a></li>
-                    </ul>
+                <div class="row">            
+                    <div class="navbar-header Menu">
+                        <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#menu-nav">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div>
+                            <a href="#" class="navbar-brand"><img src="images/logo.jpg" alt="總爺藝文中心" class="img-responsive" /></a>
+                        </div>                
+                    </div>
+                    <div id="menu-nav" class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#home" class="scroll-link">首頁</a></li>
+                            <li><a href="#about" class="scroll-link">關於總爺</a></li>
+                            <li><a href="#introduce" class="scroll-link">園區介紹</a></li>
+                            <li><a href="#panoramic" class="scroll-link">360度實景</a></li>
+                            <li><a href="#artist-village" class="scroll-link">總爺國際藝術村</a></li>
+                            <li><a href="#contact" class="scroll-link">聯絡我們</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-    <section id="home">
-        <div id="main-slider" class="owl-carousel owl-theme">
-            <div class="item Banner Level-1">
-            </div>
-            <div class="item Banner Level-2">
+    <section id="home" class="container-fluid">
+        <div class="row">
+            <div id="main-slider" class="owl-carousel owl-theme owl-banner">
+                <div class="item1">
+                </div>
+                <div class="item2">
+                </div>
             </div>
         </div>
     </section>
     <section id="about" class="container">
         <div class="row">
-            <h1>關於總爺</h1>
-            <div class="About-text">
+            <h2 class="text-center">關於總爺</h2>
+            <div>
                 <img src="images/about.jpg" alt="about" class="col-sm-6  img-responsive" />
                 <div class="col-sm-6">
                     <p>總爺藝文中心係由麻豆總爺糖廠轉變而來，有總爺紅樓辦公室、廠長宿舍、招待所、紅磚工藝館、日式庭園。這裡綠蔭處處，老樹、綠色隧道、日式建築，是婚紗攝影常拍攝的外景地，也是親子休閒活動的最佳去處。</p>
@@ -59,48 +68,52 @@
             </div>
     </section>
     <section id="introduce" class="container">
-        <h1>園區介紹</h1>
-        <div class="row ">
-            <div id="box1" class="col-sm-4 Box animation-element bounce-up">
+        <h2 class="text-center">園區介紹</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 Box animation-element bounce-up">
                 <div class="Box-heading">
                     <img src="images/box1.jpg">
                 </div>
                 <div class="Box-body">
-                    <h3>紅樓</h3>
+                    <h3 class="text-center">紅樓</h3>
                     <p>這棟以紅磚建造的長方形洋樓風格建築歷經多次增建，呈現簡樸、穩重、有序的空間格局；木造的室內樓板、八角裝飾扶手梯、屋樑椼架與小露臺欄架，非常古樸雅致；樓層窗戶開口的上緣中央以拱心石裝飾，強化了整個立面線條分明的層次變化。</p>
                 </div>
             </div>
-            <div class=" col-sm-4  Box animation-element bounce-up ">
+            <div class="col-xs-12 col-sm-4  Box animation-element bounce-up ">
                 <div class="Box-heading">
                     <img src="images/box2.jpg">
                 </div>
                 <div class="Box-body">
-                    <h3>紅磚工藝館</h3>
+                    <h3 class="text-center">紅磚工藝館</h3>
                     <p> 與招待所側方廊道相通的是昔日員工用膳之處「紅磚餐廳」，正門為白色、優美的仿巴洛克式門飾，在紅磚的襯托下更顯得清新、明快。</p>
                 </div>
             </div>
-            <div class="  col-sm-4 Box animation-element bounce-up">
+            <div class="col-xs-12 col-sm-4 Box animation-element bounce-up">
                 <div class="Box-heading">
                     <img src="images/box3.jpg">
                 </div>
                 <div class="Box-body">
-                    <h3>廠長宿舍</h3>
+                    <h3 class="text-center">廠長宿舍</h3>
                     <p>「廠長宿舍」為離地架高的單層日式木造建築，屋內採和室設計，利用移動拉窗和隔扇來變化空間與調節光線。細緻典雅的工法、壁畫與雕花工藝、富禪意的空間營造，伴隨屋內散發出的淡淡木質香味，給人一種寧靜溫馨的和諧感。</p>
                 </div>
             </div>
         </div>
     </section>
+    <section id="panoramic" class="container">
+        <h2 class="text-center">360度實景</h2>
+        <iframe src="vtour/tour.html" frameborder="0" scrolling="yes" width="100%" height="500"  allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </section>
     <section class="container">
         <div id="artist-village" class="row">
-            <h1>總爺國際藝術村</h1>
+            <h2 class="text-center">總爺國際藝術村</h2>
             <p>藝術村除了提供藝術家住宿、工作室、基本創作設備與展演空間，包括藝術工坊、玻璃工房、創藝工坊、總爺藝程與兒童藝術學苑（原總爺國小）、舊圖書館、自由廳、大樹草坪區、中庭廣場區等，也鼓勵藝術家與園區外周遭的人文環境做緊密的交流，深入認識民間信仰、傳統技藝、在地歷史與產業發展，並與社區民眾互動、與鄰近藝術學校進行交換計畫。</p>
-            <h2>駐站藝術家</h2>
-            <div id="owl-artist" class="Artist owl-carousel owl-theme">
-                <div class="item ">
+            <h3 class="text-center">駐站藝術家</h3>
+            <div id="owl-artist" class="Artist owl-carousel owl-theme owl-artist">
+                <div class="item">
                     <img src="images/artist1.jpg" alt="artist1" />
                     <h3>Linda Toigo</h3>
                 </div>
-                <div class="item ">
+                <div class="item">
                     <img src="images/artist2.jpg" alt="artist2" />
                     <h3>朴昭玧（Soyoon Park）</h3>
                 </div>
@@ -125,7 +138,7 @@
     </section>
     <section id="contact" class="container">
         <div class="row">
-            <h1>聯絡我們</h1>
+            <h2 class="text-center">聯絡我們</h2>
             <p id="contact-text">若您對我們的服務或有其他相關問題需要我們為您解答，歡迎透用上班時間與我們聯繫，或透過以下表格留下您保貴的意見，再次感謝您的蒞臨賜教，謝謝！</p>
             <div class="col-sm-6 Information">
                 <p>721 台南市麻豆區南勢里總爺5號</p>

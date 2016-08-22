@@ -1,96 +1,33 @@
-#about p, #artist-village p, #contact p {
+body {
+  font-family: Arila, "Microsoft JhengHei", "PMingLiU", sans-serif;
+}
+
+p {
   font-size: 18px;
   letter-spacing: 0.1em;
   line-height: 1.5em;
   text-indent: 20px;
 }
 
-#about h1, #introduce h1, #introduce .Box .Box-body h3, #artist-village h1, #contact h1 {
-  text-align: center;
-}
-
-#main-nav {
-  background: #fff;
-  position: fixed;
-  width: 100%;
-  z-index: 5;
-}
-#main-nav .navbar-nav > li > a {
-  font-size: 18px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-#main-nav .navbar-nav > li > a:hover {
-  color: #4da5f5;
-}
-
-#main-slider {
-  overflow: hidden;
-  position: relative;
-  top: 80px;
-}
-#main-slider .Banner {
+#main-slider .item1, #main-slider .item2 {
   background-repeat: no-repeat;
   background-position: 20% 0;
   background-size: cover;
   display: block;
   height: calc(100vh - 80px);
 }
-#main-slider .Level-1 {
-  background-image: url("../images/banner1a.jpg");
-}
-#main-slider .Level-2 {
-  background-image: url("../images/banner2a.jpg");
-}
-#main-slider .owl-controls .owl-buttons .owl-prev {
-  position: absolute;
-  top: 50%;
-  left: 0;
-}
-#main-slider .owl-controls .owl-buttons .owl-next {
-  position: absolute;
-  top: 50%;
-  right: 0;
-}
 
-#about, #introduce, #artist-village, #contact {
-  padding-top: 100px;
+.owl-banner .owl-controls .owl-buttons .owl-prev, .owl-banner .owl-controls .owl-buttons .owl-next, .owl-artist .owl-controls .owl-buttons .owl-prev, .owl-artist .owl-controls .owl-buttons .owl-next {
+  background-color: #4da5f5;
+  border-radius: 0;
+  webkit-border-radius: 0;
+  color: #FFF;
+  font-size: 26px;
+  margin: 10px;
+  padding: 12px 16px;
 }
-
-#about h1 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-#about p {
-  padding: 10px 5px;
-}
-
-#introduce h1 {
-  margin-bottom: 30px;
-}
-#introduce .Box {
-  margin-bottom: 30px;
-}
-#introduce .Box .Box-heading img {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  height: 120px;
-  width: 100%;
-}
-#introduce .Box .Box-body {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  background-color: #dbdbdb;
-  padding: 15px 15px;
-}
-#introduce .Box .Box-body h3 {
-  margin: 0 0 10px 0;
-}
-#introduce .Box .Box-body p {
-  font-size: 15px;
-  letter-spacing: 0.1em;
-  line-height: 1.7em;
-  text-indent: 15px;
+.owl-banner .owl-controls .owl-buttons .owl-prev:hover, .owl-banner .owl-controls .owl-buttons .owl-next:hover, .owl-artist .owl-controls .owl-buttons .owl-prev:hover, .owl-artist .owl-controls .owl-buttons .owl-next:hover {
+  background-color: #000;
 }
 
 .animation-element {
@@ -122,11 +59,112 @@
   transform: translate3d(0px, 0px, 0px);
 }
 
+.owl-banner .owl-controls .owl-buttons .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+.owl-banner .owl-controls .owl-buttons .owl-next {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+}
+
+#main-nav {
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+#main-nav .navbar-nav > li > a {
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#main-nav .navbar-nav > li > a:hover {
+  color: #4da5f5;
+}
+
+@media screen and (max-width: 768px) {
+  #main-nav .Menu {
+    height: 80px;
+  }
+  #main-nav .Menu button {
+    margin-top: 20px;
+  }
+}
+#main-slider {
+  overflow: hidden;
+  position: relative;
+  top: 80px;
+}
+#main-slider .item1 {
+  background-image: url("../images/banner1a.jpg");
+}
+#main-slider .item2 {
+  background-image: url("../images/banner2a.jpg");
+}
+
+#about, #introduce, #panoramic, #artist-village, #contact {
+  padding-top: 100px;
+}
+
+#about h2 {
+  margin: 30px 15px;
+}
+#about p {
+  padding: 10px 5px;
+}
+
+@media screen and (max-width: 768px) {
+  #about, #introduce, #panoramic, #artist-village, #contact {
+    padding-top: 40px;
+  }
+
+  #about {
+    margin-top: 17px;
+  }
+  #about img {
+    padding-bottom: 15px;
+  }
+  #about p {
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #about img {
+    margin-top: 80px;
+  }
+}
+#introduce h2 {
+  margin-bottom: 30px;
+}
+#introduce .Box {
+  margin-bottom: 30px;
+}
+#introduce .Box .Box-heading img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 120px;
+  max-width: 100%;
+  width: 100%;
+}
+#introduce .Box .Box-body {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #dbdbdb;
+  padding: 15px 15px;
+}
+#introduce .Box .Box-body h3 {
+  margin: 0 0 10px 0;
+}
+
+#panoramic h2 {
+  padding-bottom: 15px;
+}
+
 #artist-village p {
   padding: 30px 15px 20px 20px;
-}
-#artist-village h2 {
-  margin-left: 50px;
 }
 #artist-village .Artist {
   padding: 10px 30px 30px 30px;
@@ -134,26 +172,11 @@
 #artist-village .Artist .item {
   margin: 0 15px 15px 15px;
 }
-#artist-village .Artist h3 {
-  text-align: center;
-}
 #artist-village .Artist img {
   display: block;
   height: auto;
+  max-width: 100%;
   width: 100%;
-}
-
-.owl-theme .owl-controls .owl-buttons div {
-  background-color: #4da5f5;
-  border-radius: 0;
-  webkit-border-radius: 0;
-  color: #FFF;
-  font-size: 26px;
-  margin: 10px;
-  padding: 12px 16px;
-}
-.owl-theme .owl-controls .owl-buttons div:hover {
-  background-color: #000;
 }
 
 #contact #contact-text {
@@ -207,37 +230,7 @@
   background: #000;
 }
 
-footer {
-  background-color: #262626;
-  color: #fff;
-  letter-spacing: 0.1em;
-  margin-top: 30px;
-  padding: 20px;
-}
-
-@media(max-width: 768px) {
-  #main-nav .Menu {
-    height: 80px;
-  }
-  #main-nav .Menu button {
-    margin-top: 20px;
-    margin-right: 30px;
-  }
-
-  #about {
-    margin-top: 17px;
-  }
-  #about img {
-    padding-bottom: 15px;
-  }
-  #about p {
-    margin: 15px;
-  }
-
-  #about, #introduce, #artist-village, #contact {
-    padding: 40px 0 0 0;
-  }
-
+@media screen and (max-width: 768px) {
   #contact {
     margin: 10px;
   }
@@ -245,13 +238,15 @@ footer {
     text-align: left;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
-  #about img {
-    margin-top: 80px;
-  }
-}
-@media (min-width: 770px) {
+@media screen and (min-width: 770px) {
   #contact #Button-control {
     margin-left: 87px;
   }
+}
+footer {
+  background-color: #262626;
+  color: #fff;
+  letter-spacing: 0.1em;
+  margin-top: 30px;
+  padding: 20px;
 }
