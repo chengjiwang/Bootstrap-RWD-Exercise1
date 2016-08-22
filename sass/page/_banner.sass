@@ -2,25 +2,10 @@
 	overflow: hidden
 	position: relative
 	top: 80px
-	.Banner 
-		background-repeat: no-repeat
-		background-position: 20% 0
-		background-size: cover
-		display: block
-		height: calc(100vh - 80px)
-	.Level-1
+	.item1
 		background-image: url("../images/banner1a.jpg")
-	.Level-2
+		@extend %banner-image
+	.item2
 		background-image: url("../images/banner2a.jpg")
-		
-	.owl-controls .owl-buttons
-		.owl-prev
-			position: absolute
-			// transform: translate(-50%, 0%)
-			top: 50%
-			left: 0
-		.owl-next
-			position: absolute
-			top: 50%
-			right: 0
+		@extend %banner-image		
 

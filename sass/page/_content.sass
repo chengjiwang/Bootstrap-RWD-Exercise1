@@ -1,17 +1,30 @@
 #about,#introduce,#artist-village,#contact
 	padding-top: 100px
+
+// about 
 #about
-	h1
-		@extend %center
-		margin-top: 30px
-		margin-bottom: 30px
+	h2
+		margin: 30px 15px
 	p 
-		@extend %text-style
 		padding: 10px 5px
 
+@media screen and (max-width: 768px)
+	#about,#introduce,#artist-village,#contact
+		padding-top: 40px
+	#about
+		margin-top: 17px   
+		img
+			padding-bottom: 15px
+		p
+			margin: 15px
+@media screen and (min-width: 768px) and (max-width: 992px) 
+	#about
+		img
+			margin-top: 80px
+
+// introduce
 #introduce
-	h1
-		@extend %center
+	h2
 		margin-bottom: 30px
 	.Box 
 		margin-bottom: 30px
@@ -20,83 +33,34 @@
 				border-top-left-radius: 8px
 				border-top-right-radius: 8px
 				height: 120px
+				max-width: 100%
 				width: 100%
 		.Box-body
 			border-bottom-left-radius: 8px
 			border-bottom-right-radius: 8px
-			background-color: #dbdbdb
+			background-color: $box-bgcolor
 			padding: 15px 15px
-			h3
-				@extend %center
+			h3	
 				margin: 0 0 10px 0
-			p 
-				font-size: 15px
-				letter-spacing: 0.1em
-				line-height: 1.7em
-				text-indent: 15px
-// animation
-.animation-element 
-	position: relative
-.bounce-up 
-	opacity: 0
-	-moz-transition: all 700ms ease-out
-	-webkit-transition: all 700ms ease-out
-	-o-transition: all 700ms ease-out
-	transition: all 700ms ease-out
-	-moz-transform: translate3d(0px, 200px, 0px)
-	-webkit-transform: translate3d(0px, 200px, 0px)
-	-o-transform: translate(0px, 200px)
-	-ms-transform: translate(0px, 200px)
-	transform: translate3d(0px, 200, 0px)
-	-webkit-backface-visibility: hidden
-	-moz-backface-visibility: hidden
-	backface-visibility: hidden
-.in-view  
-	opacity: 1
-	-moz-transform: translate3d(0px, 0px, 0px)
-	-webkit-transform: translate3d(0px, 0px, 0px)
-	-o-transform: translate(0px, 0px)
-	-ms-transform: translate(0px, 0px)
-	transform: translate3d(0px, 0px, 0px)
+
+
 
 #artist-village
-	h1
-		@extend %center
 	p 
-		@extend %text-style
-		padding: 30px 15px 20px 20px
-	h2 
-		margin-left: 50px		
+		padding: 30px 15px 20px 20px	
 	.Artist
 		padding: 10px 30px 30px 30px
 		.item
-			margin: 0 15px 15px 15px
-		h3
-			text-align: center	
+			margin: 0 15px 15px 15px	
 		img
 			display: block
 			height: auto
+			max-width: 100%
 			width: 100%
-
-.owl-theme .owl-controls .owl-buttons div
-	background-color: #4da5f5
-	border-radius: 0
-	webkit-border-radius: 0
-	color: #FFF
-	font-size: 26px
-	margin: 10px
-	padding: 12px 16px
-	&:hover
-		background-color: #000
-	
 	
 #contact
 	#contact-text 
 		padding: 30px 20px 20px 20px 
-	h1
-		@extend %center
-	p 
-		@extend %text-style
 	.Information
 		margin-top: 30px
 
@@ -136,4 +100,15 @@
 			margin-right: 10px
 		[type="reset"]
 			background: #000
+
+@media screen and (max-width: 768px)
+	#contact
+		margin: 10px
+		form label
+			text-align: left
+	
+@media screen and (min-width: 770px) 
+	#contact
+		#Button-control
+			margin-left: 87px
 			

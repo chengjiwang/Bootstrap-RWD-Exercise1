@@ -6,18 +6,18 @@ $(document).ready(function() {
             window_top_position = $window.scrollTop(),  
             window_bottom_position = (window_top_position + window_height);
      
-    $.each($animation_elements, function() {
-        var $element = $(this),
-            element_height = $element.outerHeight(), 
-            element_top_position = $element.offset().top, 
-            element_bottom_position = (element_top_position + element_height);
-          
-        //check to see if this current container is within viewport
-        if ((element_bottom_position >= window_top_position) &&
-            (element_top_position <= window_bottom_position)) {
-            $element.addClass('in-view');
-        } 
-      });
+        $.each($animation_elements, function() {
+            var $element = $(this),
+                element_height = $element.outerHeight(), 
+                element_top_position = $element.offset().top, 
+                element_bottom_position = (element_top_position + element_height);
+              
+            //check to see if this current container is within viewport
+            if ((element_bottom_position >= window_top_position) &&
+                (element_top_position <= window_bottom_position)) {
+                $element.addClass('in-view');
+            } 
+        });
     }
     $window.on('scroll resize', checkView);
     $window.trigger('scroll');
