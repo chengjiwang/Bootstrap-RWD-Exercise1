@@ -105,7 +105,7 @@ p {
   background-image: url("../images/banner2a.jpg");
 }
 
-#about, #introduce, #panoramic, #artist-village, #contact {
+#about, #introduce, #artist-village, #contact {
   padding-top: 100px;
 }
 
@@ -117,7 +117,7 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  #about, #introduce, #panoramic, #artist-village, #contact {
+  #about, #introduce, #artist-village, #contact {
     padding-top: 40px;
   }
 
@@ -157,10 +157,6 @@ p {
 }
 #introduce .Box .Box-body h3 {
   margin: 0 0 10px 0;
-}
-
-#panoramic h2 {
-  padding-bottom: 15px;
 }
 
 #artist-village p {
